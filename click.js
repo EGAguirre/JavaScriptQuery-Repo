@@ -1,7 +1,8 @@
 //declare samecolor() here
 function samecolor(){
+    const doc = document;
   let color = "#b1ffa3"
-  const doc = document;
+
 
   let divs = doc.querySelectorAll("#samecolor div");
 
@@ -15,14 +16,19 @@ function samecolor(){
 }
 //declare diffcolor() here
 function diffcolor(){
-  let color = "#B30EB8";
-  const doc = document;
+const doc = document;
+  let reed = "#B30EB8";
+  let deed = "#a6fcfb";
+
 
   let divs = doc.querySelectorAll("#diffcolor div");
 
-  for(let i=0;i<divs.length;i++){
-    divs[i].style.height = "500px";
-  
+  for(let i=0;i<divs.length;i=i+2){
+    divs[i].style.backgroundColor = reed;
+
+  }
+  for(let i=1; i<diffdivs.length;i=i+2){
+  diffdivs[i].style.backgroundColor = deed;
   }
 
 }
